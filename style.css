@@ -164,8 +164,8 @@ label {
     gap: 10px;
     cursor: pointer;
     color: var(--cor-texto-secundario);
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row-reverse; /* Mantém o checkbox à esquerda do texto */
+    justify-content: flex-start; /* Alinha o grupo (checkbox + texto) à esquerda */
     width: fit-content;
 }
 
@@ -229,7 +229,7 @@ label {
     }
 
     label {
-        justify-content: flex-start;
+        justify-content: flex-start; /* Garante alinhamento à esquerda em telas maiores */
     }
 }
 
