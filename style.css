@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-    --cor-fundo-principal: #3D0000; /* Vinho escuro / Bordô */
-    --cor-fundo-secundario: #6F0000; /* Vermelho escuro / Borgonha */
-    --cor-texto-principal: #FFEEE0; /* Creme claro / Quase branco */
-    --cor-texto-secundario: #FFC0CB; /* Rosa claro / Salmão suave */
-    --cor-borda-destaque: #FF7B5A; /* Laranja avermelhado vibrante */
-    --cor-acao-principal: #FFD25B; /* Amarelo dourado (para sucesso/forte) */
+    --cor-fundo-principal: #3D0000;
+    --cor-fundo-secundario: #6F0000;
+    --cor-texto-principal: #FFEEE0;
+    --cor-texto-secundario: #FFC0CB;
+    --cor-borda-destaque: #FF7B5A;
+    --cor-acao-principal: #FFD25B;
 
     --fonte-corpo: 'Open Sans', sans-serif;
     --fonte-titulo-codigo: 'Space Mono', monospace;
@@ -48,14 +48,17 @@ body {
 .titulo-secundario {
     font-size: 1.8rem;
     color: var(--cor-texto-principal);
-    margin-bottom: 15px;
     text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .conteudo-titulo {
     margin-top: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
 }
 
 .conteudo-senha {
@@ -191,15 +194,15 @@ label {
 }
 
 .fraca {
-    background-color: #A30000; /* Vermelho mais escuro para fraca */
+    background-color: #A30000;
 }
 
 .media {
-    background-color: #FF8C00; /* Laranja forte para média */
+    background-color: #FF8C00;
 }
 
 .forte {
-    background-color: var(--cor-acao-principal); /* Amarelo dourado para forte */
+    background-color: var(--cor-acao-principal);
 }
 
 .parametro-senha-textos {
