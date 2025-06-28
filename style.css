@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
 
 :root {
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
+    --branco: #E0E0E0; /* Um branco mais suave */
+    --cor-de-fundo: #1A202C; /* Azul escuro quase preto */
+    --fundo-senha: #2D3748; /* Um tom de cinza azulado mais claro */
+    --fundo-texto: #4A5568; /* Outro tom de cinza azulado */
+    --borda: #63B3ED; /* Azul claro vibrante para detalhes */
+    --destaque: #6EE7B7; /* Um verde menta para destaque de força da senha */
+
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-mono: 'Fira Code', monospace; /* Fonte monoespaçada mais moderna */
 }
 
 * {
@@ -17,37 +19,46 @@
 body {
     color: var(--branco);
     background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
+    font-family: var(--fonte-principal);
+    line-height: 1.6; /* Melhora a legibilidade */
 }
 
 .titulo-principal {
-    font-family: var(--roboto-mono);
-    font-size: 32px;
+    font-family: var(--fonte-mono);
+    font-size: 3rem; /* Aumentado para mais impacto */
+    font-weight: 700; /* Negrito para destaque */
+    color: var(--borda); /* Cor de destaque */
 }
 
 .titulo-secundario {
-    font-size: 24px;
+    font-size: 2rem;
+    color: var(--branco);
 }
 
 .conteudo-titulo {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 5rem; /* Ajustado para espaçamento */
+    margin-bottom: 3rem;
 }
 
 .conteudo-senha {
-    margin-top: 80px;
+    margin-top: 3rem;
     background: var(--fundo-senha);
-    padding: 24px;
+    padding: 2rem;
     border-bottom: 6px solid var(--borda);
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
 #campo-senha {
     background-color: var(--fundo-senha);
     border: none;
     color: var(--branco);
-    font-family: var(--roboto-mono);
-    font-size: 40px;
-    width: 70%;
+    font-family: var(--fonte-mono);
+    font-size: 2.5rem; /* Ajustado para melhor visualização */
+    width: 100%; /* Ocupar toda a largura */
+    padding: 0.5rem 0;
+    text-align: center;
 }
 
 #campo-senha:focus {
@@ -55,24 +66,30 @@ body {
 }
 
 .conteudo {
-    max-width: 1200px;
+    max-width: 960px; /* Levemente reduzido para melhor leitura */
     margin: 0 auto;
+    padding: 1rem; /* Adicionado padding para telas menores */
 }
 
 .parametro {
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
-    margin-top: 32px;
-    padding: 24px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 .parametro-titulo {
-    font-family: var(--roboto-mono);
-    font-size: 28px;
+    font-family: var(--fonte-mono);
+    font-size: 2rem;
+    color: var(--borda);
+    margin-bottom: 1rem;
 }
 
 .parametro-senha__titulo {
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--branco);
 }
 
 .parametro-coluna__senha {
@@ -82,77 +99,111 @@ body {
 }
 
 .parametro-senha {
-    width: 50%;
+    width: 100%; /* Ocupar a largura total em telas menores */
     margin: 0 auto;
 }
 
 .parametro-senha-botoes {
     display: flex;
     justify-content: center;
+    gap: 1rem; /* Espaçamento entre os botões */
+    margin-top: 1.5rem;
 }
 
 .parametro-senha__botao {
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
-    padding: 24px;
-    font-size: 24px;
+    padding: 1rem 1.5rem; /* Ajustado padding */
+    font-size: 1.25rem;
     cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.parametro-senha__botao:hover {
+    background-color: var(--borda);
+    color: var(--cor-de-fundo);
 }
 
 .parametro-senha__texto {
-    padding: 24px;
+    padding: 1rem 0; /* Ajustado padding */
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
-    margin: 0;
-    font-size: 24px;
+    margin: 1.5rem 0; /* Ajustado margem */
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--branco);
 }
 
 label {
-    font-size: 20px;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .checkbox {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     cursor: pointer;
+    accent-color: var(--borda); /* Colore o checkbox */
 }
 
 .barra {
     background-color: var(--fundo-senha);
-    height: 30px;
+    height: 15px; /* Altura reduzida para visual mais elegante */
     width: 100%;
+    border-radius: 5px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o preenchimento fique dentro da borda arredondada */
+    margin-top: 1rem;
 }
 
 .forca {
-    height: 30px;
+    height: 100%;
     position: relative;
-    bottom: 30px;
+    bottom: 0; /* Removido bottom negativo, pois a barra já é o contêiner */
+    width: 0%; /* Inicia em 0 e será preenchido via JS */
+    transition: width 0.4s ease-in-out; /* Transição suave */
+    border-radius: 5px;
 }
 
 .fraca {
-    width: 25%;
-    background-color: #E71B32;
+    background-color: #EF4444; /* Vermelho mais moderno */
 }
 
 .media {
-    background-color: #FAF408;
-    width: 50%;
+    background-color: #FACC15; /* Amarelo mais moderno */
 }
 
 .forte {
-    background-color: #00FF85;
-    width: 100%;
+    background-color: var(--destaque); /* Usa a nova cor de destaque */
 }
 
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--branco);
 }
 
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
         flex-direction: row;
+        justify-content: space-between; /* Melhor distribuição */
+        align-items: center; /* Alinha verticalmente */
+    }
+
+    .parametro-senha {
+        width: 50%; /* Mantém a largura de 50% em telas maiores */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conteudo {
+        max-width: 1100px;
     }
 }
