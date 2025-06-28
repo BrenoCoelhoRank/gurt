@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-    --cor-fundo-principal: #3a2e4d;
-    --cor-fundo-secundario: #574a70;
+    --cor-fundo-principal: #2E3A4D;
+    --cor-fundo-secundario: #4A5C70;
     --cor-texto-principal: #F8F9FA;
-    --cor-texto-secundario: #ffffff;
-    --cor-borda-destaque: #a16cd3;
-    --cor-acao-principal: #9666cc;
+    --cor-texto-secundario: #D0D7DE;
+    --cor-borda-destaque: #A8DADC;
+    --cor-acao-principal: #66CC99;
 
     --fonte-corpo: 'Open Sans', sans-serif;
     --fonte-titulo-codigo: 'Space Mono', monospace;
