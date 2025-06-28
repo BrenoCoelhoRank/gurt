@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
-    /* Novas Cores */
-    --cor-fundo-principal: #500000; /* Um azul escuro acinzentado */
-    --cor-fundo-secundario: #b10000; /* Um tom de azul mais claro para seções */
-    --cor-texto-principal: #F8F9FA; /* Branco suave para o texto */
-    --cor-texto-secundario: #ffffff; /* Cinza claro para detalhes */
-    --cor-borda-destaque: #360101; /* Azul ciano suave para bordas e destaques */
-    --cor-acao-principal: #160000; /* Verde menta para ações e sucesso */
+    --cor-fundo-principal: #3D0000; /* Vinho escuro / Bordô */
+    --cor-fundo-secundario: #6F0000; /* Vermelho escuro / Borgonha */
+    --cor-texto-principal: #FFEEE0; /* Creme claro / Quase branco */
+    --cor-texto-secundario: #FFC0CB; /* Rosa claro / Salmão suave */
+    --cor-borda-destaque: #FF7B5A; /* Laranja avermelhado vibrante */
+    --cor-acao-principal: #FFD25B; /* Amarelo dourado (para sucesso/forte) */
 
-    /* Novas Fontes */
-    --fonte-corpo: 'Open Sans', sans-serif; /* Fonte legível para o corpo do texto */
-    --fonte-titulo-codigo: 'Space Mono', monospace; /* Fonte monoespaçada moderna para títulos e campos */
+    --fonte-corpo: 'Open Sans', sans-serif;
+    --fonte-titulo-codigo: 'Space Mono', monospace;
 }
 
-/* Reset básico e tipografia */
 * {
-    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-weight: 400;
@@ -26,74 +23,71 @@ body {
     color: var(--cor-texto-principal);
     background-color: var(--cor-fundo-principal);
     font-family: var(--fonte-corpo);
-    line-height: 1.6; /* Melhor espaçamento entre linhas */
-    padding: 20px; /* Um pouco de padding geral para não colar nas bordas */
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Layout Geral */
 .conteudo {
-    max-width: 900px; /* Largura máxima mais contida */
-    margin: 40px auto; /* Centraliza e adiciona espaço superior */
+    max-width: 900px;
+    margin: 40px auto;
     padding: 20px;
     background-color: var(--cor-fundo-secundario);
-    border-radius: 12px; /* Cantos mais arredondados */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Títulos */
 .titulo-principal {
     font-family: var(--fonte-titulo-codigo);
-    font-size: 2.8rem; /* Tamanho maior */
+    font-size: 2.8rem;
     color: var(--cor-borda-destaque);
     text-align: center;
     margin-bottom: 20px;
-    letter-spacing: 1px; /* Espaçamento entre letras */
+    letter-spacing: 1px;
 }
 
 .titulo-secundario {
     font-size: 1.8rem;
     color: var(--cor-texto-principal);
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .conteudo-titulo {
-    margin-top: 0; /* Ajustado */
+    margin-top: 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória suave */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Campo de Senha Gerada */
 .conteudo-senha {
     margin-top: 30px;
-    background: var(--cor-fundo-secundario); /* Mantém o mesmo fundo da seção */
+    background: var(--cor-fundo-secundario);
     padding: 20px;
-    border: 2px solid var(--cor-borda-destaque); /* Borda mais fina e destacada */
+    border: 2px solid var(--cor-borda-destaque);
     border-radius: 8px;
-    display: flex; /* Para centralizar o campo de senha */
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80px; /* Altura mínima para o campo */
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra interna */
+    min-height: 80px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #campo-senha {
-    background-color: transparent; /* Transparente para usar o fundo do pai */
+    background-color: transparent;
     border: none;
     color: var(--cor-texto-principal);
     font-family: var(--fonte-titulo-codigo);
-    font-size: 2.5rem; /* Tamanho da fonte da senha */
+    font-size: 2.5rem;
     text-align: center;
-    width: 90%; /* Ocupa quase toda a largura */
-    word-break: break-all; /* Quebra de linha para senhas longas */
+    width: 90%;
+    word-break: break-all;
 }
 
 #campo-senha:focus {
     outline: none;
 }
 
-/* Parâmetros */
 .parametro {
-    background-color: var(--cor-fundo-principal); /* Fundo mais escuro que a seção principal */
+    background-color: var(--cor-fundo-principal);
     border: 1px solid var(--cor-borda-destaque);
     margin-top: 30px;
     padding: 25px;
@@ -117,21 +111,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px; /* Espaçamento entre itens da coluna */
+    gap: 15px;
 }
 
 .parametro-senha {
-    width: 100%; /* Ocupa toda a largura em mobile */
-    margin: 0; /* Remove margem desnecessária */
+    width: 100%;
+    margin: 0;
 }
 
-/* Botões */
 .parametro-senha-botoes {
     display: flex;
-    justify-content: space-around; /* Distribui os botões */
+    justify-content: space-around;
     margin-top: 25px;
-    flex-wrap: wrap; /* Permite que os botões quebrem a linha */
-    gap: 15px; /* Espaçamento entre os botões */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .parametro-senha__botao {
@@ -151,7 +144,6 @@ body {
     border-color: var(--cor-borda-destaque);
 }
 
-/* Texto de comprimento da senha */
 .parametro-senha__texto {
     padding: 15px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -162,28 +154,29 @@ body {
     color: var(--cor-texto-secundario);
 }
 
-/* Checkboxes */
 label {
     font-size: 1.05rem;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre checkbox e label */
+    gap: 10px;
     cursor: pointer;
     color: var(--cor-texto-secundario);
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: fit-content;
 }
 
 .checkbox {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    /* Estilo para o checkbox (pode variar o visual dependendo do navegador) */
-    accent-color: var(--cor-acao-principal); /* Cor de destaque para o checkbox */
+    accent-color: var(--cor-acao-principal);
+    margin-right: 0px;
 }
 
-/* Barra de Força da Senha */
 .barra {
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil para a barra */
-    height: 12px; /* Altura mais discreta */
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 12px;
     width: 100%;
     border-radius: 6px;
     overflow: hidden;
@@ -192,46 +185,48 @@ label {
 
 .forca {
     height: 100%;
-    width: 0%; /* Esta é a propriedade que o JavaScript vai alterar */
-    transition: width 0.5s ease-out; /* Para uma transição suave da largura */
+    width: 0%;
+    transition: width 0.5s ease-out;
     border-radius: 6px;
 }
 
 .fraca {
-    background-color: #EF5350; /* Vermelho mais vibrante */
+    background-color: #A30000; /* Vermelho mais escuro para fraca */
 }
 
 .media {
-    background-color: #FFC107; /* Amarelo ouro */
+    background-color: #FF8C00; /* Laranja forte para média */
 }
 
 .forte {
-    background-color: var(--cor-acao-principal); /* Verde menta da variável */
+    background-color: var(--cor-acao-principal); /* Amarelo dourado para forte */
 }
 
-/* Textos de Feedback da Força */
 .parametro-senha-textos {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    font-size: 0.9rem; /* Texto menor para feedback */
+    font-size: 0.9rem;
     color: var(--cor-texto-secundario);
 }
 
-/* Responsividade */
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start; /* Alinha no topo para melhor layout */
+        align-items: flex-start;
     }
 
     .parametro-senha {
-        width: 48%; /* Duas colunas em telas maiores */
+        width: 48%;
     }
 
     .parametro-senha-botoes {
-        justify-content: flex-start; /* Alinha botões à esquerda */
+        justify-content: flex-start;
+    }
+
+    label {
+        justify-content: flex-start;
     }
 }
 
