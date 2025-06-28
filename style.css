@@ -157,16 +157,19 @@ body {
     color: var(--cor-texto-secundario);
 }
 
-label {
+/* Modificação para o alinhamento da checkbox */
+.parametro-senha-checkbox {
+    display: flex; /* Garante que o contêiner do checkbox e label seja flex */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 10px; /* Espaçamento entre o checkbox e o label */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço entre cada opção */
+}
+
+.parametro-senha-checkbox label {
     font-size: 1.05rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
     cursor: pointer;
     color: var(--cor-texto-secundario);
-    flex-direction: row-reverse; 
-    justify-content: flex-start; 
-    width: fit-content;
+    order: 2; /* Move o label para a direita (ordem 2) */
 }
 
 .checkbox {
@@ -174,7 +177,7 @@ label {
     height: 20px;
     cursor: pointer;
     accent-color: var(--cor-acao-principal);
-    margin-right: 0px;
+    order: 1; /* Move o checkbox para a esquerda (ordem 1) */
 }
 
 .barra {
@@ -226,10 +229,6 @@ label {
 
     .parametro-senha-botoes {
         justify-content: flex-start;
-    }
-
-    label {
-        justify-content: flex-start; 
     }
 }
 
