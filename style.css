@@ -192,7 +192,6 @@ label {
 
 .forca {
     height: 100%;
-    width: 0%; /* Começa em 0, preenchido por JS */
     transition: width 0.5s ease-out; /* Animação suave de preenchimento */
     border-radius: 6px;
 }
