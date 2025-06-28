@@ -2,12 +2,12 @@
 
 :root {
     /* Novas Cores */
-    --cor-fundo-principal: #2E3A4D; 
-    --cor-fundo-secundario: #4A5C70; 
+    --cor-fundo-principal: #3f2563; 
+    --cor-fundo-secundario: #a572f7; 
     --cor-texto-principal: #F8F9FA; 
-    --cor-texto-secundario: #D0D7DE; 
-    --cor-borda-destaque: #A8DADC; 
-    --cor-acao-principal: #66CC99; 
+    --cor-texto-secundario: #bda1f1; 
+    --cor-borda-destaque: #9077eb; 
+    --cor-acao-principal: #9171e9; 
 
     /* Novas Fontes */
     --fonte-corpo: 'Open Sans', sans-serif; 
